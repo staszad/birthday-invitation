@@ -5,11 +5,13 @@ import { Invitation } from "./components/Invitation/Invitation";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/:personID" element={<Invitation />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="w-screen min-h-screen bg-[#221f2e] text-white px-32">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/:personID" element={<Invitation />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }
